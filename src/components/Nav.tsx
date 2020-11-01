@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
-import Icon from './icon';
+import Icon from './Icon';
 
 const NavWrapper = styled.nav`
   > ul{
