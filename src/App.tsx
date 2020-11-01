@@ -7,7 +7,10 @@ import {
   Redirect
 } from "react-router-dom";
 
-import Layout from 'components/Layout';
+import Tags from 'views/Tags';
+import Money from 'views/Money';
+import Statistics from 'views/Statistics';
+import Nomatch from 'views/Nomatch';
 
 
 function App() {
@@ -32,36 +35,6 @@ function App() {
       </Switch>
     </Router>
   );
-}
-
-function Statistics() {
-  return (
-    <Layout>
-      <h2>统计页</h2>
-    </Layout>
-  );
-}
-
-function Tags() {
-  return (
-    <Layout>
-      <h2>标签页</h2>
-    </Layout>
-  );
-}
-
-function Money() {
-  return (
-    <Layout>
-      <h2>记账页</h2>
-    </Layout>
-  );
-}
-
-function Nomatch() {
-  return (
-    <div>页面不存在，你输错了地址！！</div>
-  )
 }
 
 export default App;
