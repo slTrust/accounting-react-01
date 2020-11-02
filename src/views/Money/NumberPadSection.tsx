@@ -5,7 +5,7 @@ import { generateOutput } from './NumberPadSection/generateOutput';
 type Props = {
   value: number;
   onChange: (value: number) => void;
-  onOK?: () => void;
+  onOk?: () => void;
 };
 const NumberPadSection: React.FC<Props> = (props) => {
   const output = props.value.toString()
@@ -25,8 +25,8 @@ const NumberPadSection: React.FC<Props> = (props) => {
     if (text === null) { return; }
     if (text === 'OK') {
       // TODO
-      if (props.onOK) {
-        props.onOK();
+      if (props.onOk) {
+        props.onOk();
       }
       return;
     }
