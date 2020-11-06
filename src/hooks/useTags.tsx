@@ -1,10 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createId } from 'lib/createId';
 import { useUpdate } from 'hooks/useUpdate';
 
-const defaultTags = [
-
-]
 // 自定义hook
 const useTags = () => {
   const [tags, setTags] = useState<{
@@ -27,7 +24,7 @@ const useTags = () => {
   useUpdate(() => {
     console.log('updated')
     window.localStorage.setItem('tags', JSON.stringify(tags))
-  }, [tags]);
+  }, tags);
 
   const findTag = (id: number) => tags.filter(tag => tag.id === id)[0];
   const findTagIndex = (id: number) => {

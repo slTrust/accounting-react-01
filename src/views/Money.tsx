@@ -27,7 +27,7 @@ const CategoryWrapper = styled.div`
 
 function Money() {
   const [selected, setSelected] = useState(defaultFormData);
-  const { records, addRecord } = useRecords();
+  const { addRecord } = useRecords();
 
 
   type Selected = typeof selected;

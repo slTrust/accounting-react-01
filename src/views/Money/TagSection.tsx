@@ -39,7 +39,7 @@ type Props = {
   onChange: (selected: number[]) => void;
 }
 const TagSection: React.FC<Props> = (props) => {
-  const { tags, setTags, addTag } = useTags();
+  const { tags, addTag } = useTags();
   const selectedTagIds = props.value;
 
   const onToggleTag = (tagId: number) => {
