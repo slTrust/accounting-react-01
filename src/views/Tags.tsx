@@ -30,7 +30,7 @@ function Tags() {
     <Layout>
       <TagList>
         {tags.map(tag =>
-          <li key={tag.id}>
+          <li key={tag.id + Math.random()}>
             <Link to={'/tags/' + tag.id}>
               <span className="oneLine">{tag.name}</span>
               <Icon name="right" />

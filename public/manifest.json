@@ -1,6 +1,7 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "homepage": "https://sltrust.github.io/morney-001-website/",
   "icons": [
     {
       "src": "favicon.ico",
