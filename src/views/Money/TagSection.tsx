@@ -58,7 +58,7 @@ const TagSection: React.FC<Props> = (props) => {
     <Wrapper>
       <ol>
         {tags.map(tag =>
-          <li key={tag.id} onClick={() => { onToggleTag(tag.id) }}
+          <li key={tag.id + (Math.random() + '')} onClick={() => { onToggleTag(tag.id) }}
             className={getClass(tag.id)}>
             {tag.name}
           </li>
